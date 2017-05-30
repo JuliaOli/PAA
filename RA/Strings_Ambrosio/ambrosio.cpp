@@ -27,7 +27,6 @@ bool div_conq(string a, string b){
     b.copy(b2, b_rest, b_size);
     b2[b_rest] = '\0';
 
-    //cout << a1 << " " << a2 << " " << b1 << " " << b2 << endl;
 
     if(div_conq((string)a1, (string)b1) && div_conq((string)a2, (string)b2) || div_conq((string)a1, (string)b2) 
     && div_conq((string)a2, (string)b1)){
